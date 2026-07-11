@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Waqto
+
+Next.js app configured for static export and [GitHub Pages](https://pages.github.com/) hosting.
 
 ## Getting Started
 
-First, run the development server:
+Install dependencies and run the development server:
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the app locally.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+```
 
-## Learn More
+Static files are written to the `out/` directory.
 
-To learn more about Next.js, take a look at the following resources:
+To preview the GitHub Pages build locally (with the `/waqto` base path):
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+GITHUB_PAGES=true npm run build
+npx serve out
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Then open [http://localhost:3000/waqto/](http://localhost:3000/waqto/).
 
-## Deploy on Vercel
+## Deploy to GitHub Pages
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Push this repository to GitHub.
+2. In the repo **Settings → Pages**, set **Source** to **GitHub Actions**.
+3. Push to `main` — the workflow in `.github/workflows/deploy.yml` builds and deploys automatically.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site will be available at `https://<username>.github.io/waqto/`.
+
+### Custom domain or user site
+
+If you deploy to a `username.github.io` repository (no project subpath), set `repoName` to `""` in `next.config.ts` and remove the `GITHUB_PAGES` base-path logic, or adjust `basePath` accordingly.
