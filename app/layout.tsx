@@ -13,8 +13,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Waqto",
-  description: "Waqto",
+  title: "Waqto — Software & Engineering",
+  description:
+    "Waqto is a software and engineering company building reliable products and scalable systems. Coming soon.",
+  openGraph: {
+    title: "Waqto — Software & Engineering",
+    description:
+      "Waqto is a software and engineering company building reliable products and scalable systems. Coming soon.",
+    url: "https://waqto.com",
+    siteName: "Waqto",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
