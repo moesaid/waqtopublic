@@ -31,18 +31,18 @@ WAQTO LLC operates a low-volume community SMS program for people who opt in to r
 
 ## Message flow (Call to Action / opt-in)
 
-Paste this into **How do end-users consent to receive messages?** (addresses paper-form explicit consent + optional SMS):
+**Primary opt-in evidence URL to reference:** `https://waqto.com/opt-in/`
+
+Paste into **How do end-users consent to receive messages?**:
 
 ```
-End users opt in before receiving SMS from WAQTO LLC. SMS consent is always optional and separate from membership or community signup—completing a form does not require agreeing to texts.
+End users opt in to receive SMS from WAQTO LLC. Public opt-in evidence with web and paper samples: https://waqto.com/opt-in/
 
-Web/app: On Duha (https://duha.app) website or Community App forms, the user may enter a mobile number and check a separate SMS consent checkbox that is not pre-checked.
+Web/app form: On Duha (https://duha.app) or the public form at https://waqto.com/opt-in/#web-form, the user enters Mobile Phone Number, checks an SMS consent checkbox that is NOT pre-selected, and submits (e.g. "Yes, sign me up!"). Consent language: Yes, I would like to receive automated community text messages from WAQTO LLC about prayer reminders, events, program updates, volunteer opportunities, fundraising for community programs, and urgent schedule/safety notices. I understand I will receive up to 4 messages per month (more only for time-sensitive notices). Disclosures on the form: Message frequency (up to 4/month); Message and data rates may apply; Reply HELP for help or STOP to cancel any time; By providing your phone number and checking the box you agree to receive texts from WAQTO LLC; Consent is not required to use Duha or complete community signup; links to Terms https://waqto.com/terms/ and Privacy https://waqto.com/privacy/.
 
-Paper/printed forms: Registration or community paper forms include standard signup fields (name, email, phone). SMS enrollment uses a separate, optional checkbox that is not pre-checked and is not required to complete the form. The printed checkbox wording states: "Optional — I agree to receive community text messages from WAQTO LLC (prayer reminders, events, program updates, volunteer and fundraising notices, and urgent schedule/safety notices). Message frequency varies (typically up to 4 msgs/month). Msg & data rates may apply. Reply STOP to opt out or HELP for help. Privacy: https://waqto.com/privacy/ Terms: https://waqto.com/terms/ Leaving this box unchecked still allows me to complete this form." Signing the form alone does not enroll the person in SMS.
+Paper/printed form: Community registration paper forms (sample: https://waqto.com/opt-in/#paper-form) have Name/Email/Phone signup fields that do NOT enroll SMS. A SEPARATE optional checkbox that is NOT pre-checked states: "Optional — text messages from WAQTO LLC: I agree to receive automated community text messages from WAQTO LLC (prayer reminders, events, program updates, volunteer opportunities, fundraising for community programs, and urgent schedule/safety notices). Message frequency: up to 4 messages per month (more only for time-sensitive notices). Message and data rates may apply. Reply HELP for help or STOP to cancel any time. Terms of Service and Privacy Policy at waqto.com. Leaving this box unchecked still allows me to complete this form. Consent to SMS is not required to register." Signing the form alone does not enroll in SMS.
 
-Keyword (where offered): User texts an opt-in keyword and receives a confirmation reply with brand name, frequency, Msg & data rates may apply, HELP, and STOP.
-
-All paths identify WAQTO LLC as the sender. Program details and sample web + paper consent UIs: https://waqto.com/messaging/ Privacy: https://waqto.com/privacy/ Terms: https://waqto.com/terms/
+Keyword (where offered): confirmation reply includes brand, frequency, Msg & data rates, HELP, STOP.
 ```
 
 ---

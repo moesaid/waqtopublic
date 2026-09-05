@@ -90,21 +90,29 @@ export default function MessagingPage() {
           </p>
           <p>
             <strong className="font-medium text-zinc-200">Web / app:</strong> On
-            Duha (https://duha.app) website or Community App forms, the user may
-            enter a mobile number and optionally check the SMS consent box.
+            Duha (https://duha.app) website or Community App forms, and on our
+            public subscription example at{" "}
+            <Link
+              href="/opt-in/#web-form"
+              className="text-sky-400 underline-offset-2 hover:underline"
+            >
+              waqto.com/opt-in
+            </Link>
+            , the user enters a mobile number and checks a separate SMS consent
+            checkbox that is not pre-checked, with message type, frequency, Msg
+            &amp; data rates, STOP/HELP, and Terms/Privacy links.
           </p>
           <p>
             <strong className="font-medium text-zinc-200">Paper / printed:</strong>{" "}
-            Paper forms (for example community registration) include name and
-            contact fields for signup, plus a{" "}
-            <strong className="font-medium text-zinc-200">
-              separate, optional, unchecked
-            </strong>{" "}
-            SMS consent checkbox with explicit language that the person agrees to
-            receive text messages from WAQTO LLC, the message types, that message
-            frequency varies (typically up to 4 msgs/month), that Msg &amp; data
-            rates may apply, and that they can reply STOP to opt out or HELP for
-            help. Signing the form alone does not enroll someone in SMS.
+            See the paper sample on{" "}
+            <Link
+              href="/opt-in/#paper-form"
+              className="text-sky-400 underline-offset-2 hover:underline"
+            >
+              waqto.com/opt-in#paper-form
+            </Link>
+            . Signup fields are separate from an optional, unchecked SMS
+            checkbox with full disclosures. Signing alone does not enroll in SMS.
           </p>
           <p>
             <strong className="font-medium text-zinc-200">Keyword:</strong> Where
