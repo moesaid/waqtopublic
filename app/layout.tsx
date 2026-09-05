@@ -16,16 +16,19 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "WAQTO LLC — Software & Engineering",
   description:
-    "WAQTO LLC is a Pennsylvania software and engineering company building reliable products and scalable systems.",
+    "WAQTO LLC is a Pennsylvania software and engineering company. We build and operate Duha, the masjid management platform, including community SMS messaging.",
   openGraph: {
     title: "WAQTO LLC — Software & Engineering",
     description:
-      "WAQTO LLC is a Pennsylvania software and engineering company building reliable products and scalable systems.",
+      "WAQTO LLC builds reliable software products, including Duha — membership, giving, and community messaging for Islamic centers.",
     url: "https://waqto.com",
     siteName: "WAQTO LLC",
     type: "website",
   },
 };
+
+const navLinkClass =
+  "text-xs text-zinc-400 transition hover:text-zinc-200 sm:text-sm";
 
 export default function RootLayout({
   children,
@@ -50,34 +53,59 @@ export default function RootLayout({
             className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_right,rgba(255,255,255,0.03)_1px,transparent_1px),linear-gradient(to_bottom,rgba(255,255,255,0.03)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_at_center,black_20%,transparent_75%)]"
           />
 
-          <header className="relative z-10 flex items-center justify-between px-6 py-6 sm:px-10">
+          <header className="relative z-10 flex items-center justify-between gap-4 px-6 py-6 sm:px-10">
             <Link
               href="/"
-              className="font-mono text-sm font-medium tracking-[0.35em] text-sky-400"
+              className="shrink-0 font-mono text-sm font-medium tracking-[0.35em] text-sky-400"
             >
               WAQTO LLC
             </Link>
-            <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 font-mono text-[11px] uppercase tracking-widest text-zinc-400">
-              Coming soon
-            </span>
+            <nav
+              aria-label="Primary"
+              className="flex flex-wrap items-center justify-end gap-x-4 gap-y-2"
+            >
+              <Link href="/messaging/" className={navLinkClass}>
+                Messaging
+              </Link>
+              <Link href="/privacy/" className={navLinkClass}>
+                Privacy
+              </Link>
+              <Link href="/terms/" className={navLinkClass}>
+                Terms
+              </Link>
+            </nav>
           </header>
 
           <div className="relative z-10 flex flex-1 flex-col">{children}</div>
 
           <footer className="relative z-10 border-t border-white/5 px-6 py-6 sm:px-10">
-            <div className="mx-auto flex max-w-3xl flex-col items-center gap-2 text-center">
+            <div className="mx-auto flex max-w-3xl flex-col items-center gap-3 text-center">
               <p className="text-xs text-zinc-500">
                 &copy; {year} WAQTO LLC. All rights reserved.
               </p>
               <p className="text-xs text-zinc-600">
                 301 Midland Ave, Carnegie, PA 15106 · EIN 86-2401948
               </p>
-              <Link
-                href="/privacy"
-                className="text-xs text-zinc-500 underline-offset-4 hover:text-zinc-300 hover:underline"
-              >
-                Privacy Policy
-              </Link>
+              <div className="flex flex-wrap items-center justify-center gap-x-4 gap-y-1">
+                <Link
+                  href="/messaging/"
+                  className="text-xs text-zinc-500 underline-offset-4 hover:text-zinc-300 hover:underline"
+                >
+                  Messaging
+                </Link>
+                <Link
+                  href="/privacy/"
+                  className="text-xs text-zinc-500 underline-offset-4 hover:text-zinc-300 hover:underline"
+                >
+                  Privacy Policy
+                </Link>
+                <Link
+                  href="/terms/"
+                  className="text-xs text-zinc-500 underline-offset-4 hover:text-zinc-300 hover:underline"
+                >
+                  Terms of Use
+                </Link>
+              </div>
             </div>
           </footer>
         </div>
