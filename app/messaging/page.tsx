@@ -4,21 +4,23 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "SMS Messaging Program — WAQTO LLC",
   description:
-    "WAQTO LLC Duha community SMS program: message types, opt-in consent, frequency, STOP/HELP, privacy, and terms.",
+    "WAQTO LLC community SMS: opt-in texts from WAQTO LLC, message types, frequency, STOP/HELP, privacy, and terms.",
 };
 
 export default function MessagingPage() {
   return (
     <main className="mx-auto w-full max-w-2xl flex-1 px-6 pb-20 pt-4 sm:px-10">
       <p className="font-mono text-xs uppercase tracking-[0.25em] text-sky-400/80">
-        WAQTO LLC · Duha
+        WAQTO LLC
       </p>
       <h1 className="mt-3 text-3xl font-semibold tracking-tight text-white">
         Community SMS messaging program
       </h1>
       <p className="mt-3 text-sm leading-relaxed text-zinc-400">
-        <strong className="font-medium text-zinc-200">WAQTO LLC</strong> is the
-        registered business and messaging brand for SMS sent through{" "}
+        <strong className="font-medium text-zinc-200">WAQTO LLC</strong> sends
+        community text messages to people who have agreed to receive SMS{" "}
+        <strong className="font-medium text-zinc-200">from WAQTO LLC</strong>.
+        People often join our community through{" "}
         <a
           href="https://duha.app"
           className="text-sky-400 underline-offset-2 hover:underline"
@@ -27,9 +29,8 @@ export default function MessagingPage() {
         >
           Duha
         </a>
-        , our masjid management platform. Participating Islamic centers and
-        organizations use Duha to send community texts to people who have opted
-        in.
+        , our masjid management product — Duha is where you may manage your
+        profile and opt in; the SMS sender is always WAQTO LLC.
       </p>
 
       <div className="mt-10 space-y-8 text-sm leading-relaxed text-zinc-400">
@@ -38,9 +39,9 @@ export default function MessagingPage() {
             Who receives messages
           </h2>
           <p>
-            Messages are sent only to congregation members and community contacts
-            who consented to receive SMS from their Organization via WAQTO LLC /
-            Duha. We do not send unsolicited texts.
+            Messages go only to community members and contacts who opted in to
+            receive text messages from WAQTO LLC. We do not send unsolicited
+            texts.
           </p>
         </section>
 
@@ -63,15 +64,15 @@ export default function MessagingPage() {
             Frequency and rates
           </h2>
           <p>
-            Message frequency varies by Organization and the programs you join.
-            Recipients typically receive a low volume of messages (for example up
-            to four SMS messages per month for routine updates), with higher
-            frequency only for time-sensitive notices.{" "}
+            Message frequency varies by the programs you join. Recipients
+            typically receive a low volume of messages (for example up to four
+            SMS messages per month for routine updates), with higher frequency
+            only for time-sensitive notices.{" "}
             <strong className="font-medium text-zinc-200">
               Message and data rates may apply
             </strong>{" "}
-            from your wireless carrier. WAQTO LLC and the Organization do not
-            charge a separate fee for receiving these messages.
+            from your wireless carrier. WAQTO LLC does not charge a separate fee
+            for receiving these messages.
           </p>
         </section>
 
@@ -80,12 +81,16 @@ export default function MessagingPage() {
             How to opt in
           </h2>
           <p>
-            End users opt in on the Organization&apos;s website, Community App, or
-            member/profile forms powered by Duha by providing a mobile number and
-            checking an SMS consent checkbox that is{" "}
+            You opt in by providing your mobile number and checking an SMS
+            consent checkbox that is{" "}
             <strong className="font-medium text-zinc-200">not pre-checked</strong>
-            . Additional opt-in may occur via paper forms or keyword where an
-            Organization offers them; all paths use the same disclosures.
+            {" "}
+            on Duha (website or Community App) forms, or by paper form or
+            keyword where offered. Consent is to receive community texts{" "}
+            <strong className="font-medium text-zinc-200">
+              from WAQTO LLC
+            </strong>
+            . All paths use the same disclosures.
           </p>
           <p>
             A sample of the consent language and checkbox appears below (for
@@ -122,13 +127,12 @@ export default function MessagingPage() {
             />
             <span className="text-sm leading-relaxed text-zinc-300">
               I agree to receive community text messages from{" "}
-              <strong className="font-medium text-zinc-100">WAQTO LLC</strong> on
-              behalf of my Organization through Duha (prayer reminders, events,
-              program updates, volunteer and fundraising notices, and urgent
-              schedule/safety notices). Message frequency varies (typically up
-              to 4 msgs/month; more only for time-sensitive notices). Message and
-              data rates may apply. Reply STOP to opt out or HELP for help. See
-              our{" "}
+              <strong className="font-medium text-zinc-100">WAQTO LLC</strong>{" "}
+              (prayer reminders, events, program updates, volunteer and
+              fundraising notices, and urgent schedule/safety notices). Message
+              frequency varies (typically up to 4 msgs/month; more only for
+              time-sensitive notices). Message and data rates may apply. Reply
+              STOP to opt out or HELP for help. See our{" "}
               <Link
                 href="/privacy/#sms"
                 className="text-sky-400 underline-offset-2 hover:underline"
@@ -153,21 +157,14 @@ export default function MessagingPage() {
           </h2>
           <p>
             Reply <strong className="font-medium text-zinc-200">STOP</strong> to
-            any message to unsubscribe. Reply{" "}
+            any message to unsubscribe from WAQTO LLC texts. Reply{" "}
             <strong className="font-medium text-zinc-200">HELP</strong> for
             assistance. You may also email{" "}
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 underline-offset-2 hover:underline"
             >
-              hello@waqto.com
-            </a>{" "}
-            or{" "}
-            <a
-              href="mailto:contact@duha.app"
-              className="text-sky-400 underline-offset-2 hover:underline"
-            >
-              contact@duha.app
+              admin@waqto.com
             </a>
             .
           </p>
@@ -208,14 +205,14 @@ export default function MessagingPage() {
             EIN 86-2401948
             <br />
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 underline-offset-2 hover:underline"
             >
-              hello@waqto.com
+              admin@waqto.com
             </a>
           </p>
           <p>
-            Product site:{" "}
+            Product (opt-in surface):{" "}
             <a
               href="https://duha.app"
               className="text-sky-400 underline-offset-2 hover:underline"

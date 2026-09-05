@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Link from "next/link";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -16,15 +16,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "WAQTO LLC — Software & Engineering",
   description:
-    "WAQTO LLC is a Pennsylvania software and engineering company. We build and operate Duha, the masjid management platform, including community SMS messaging.",
+    "WAQTO LLC builds Duha, Sleep Key, and HoopsGo, and runs a community SMS program for people who opt in to texts from WAQTO LLC.",
   openGraph: {
     title: "WAQTO LLC — Software & Engineering",
     description:
-      "WAQTO LLC builds reliable software products, including Duha — membership, giving, and community messaging for Islamic centers.",
+      "WAQTO LLC products and community SMS: Duha, Sleep Key, HoopsGo — opt in to hear from WAQTO LLC.",
     url: "https://waqto.com",
     siteName: "WAQTO LLC",
     type: "website",
   },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "dark",
+  themeColor: "#070b12",
 };
 
 const navLinkClass =
@@ -41,9 +46,15 @@ export default function RootLayout({
     <html
       lang="en"
       className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-      style={{ colorScheme: "dark" }}
+      style={{ colorScheme: "dark", backgroundColor: "#070b12" }}
     >
-      <body className="flex min-h-full flex-col bg-[#070b12] text-zinc-100">
+      <head>
+        <meta name="color-scheme" content="dark only" />
+      </head>
+      <body
+        className="flex min-h-full flex-col bg-[#070b12] text-zinc-100"
+        style={{ backgroundColor: "#070b12", color: "#ededed" }}
+      >
         <div className="relative flex min-h-full flex-1 flex-col overflow-hidden">
           <div
             aria-hidden

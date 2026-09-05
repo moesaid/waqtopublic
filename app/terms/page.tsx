@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "Terms of Use — WAQTO LLC",
   description:
-    "Terms of Use for WAQTO LLC websites and the Duha community SMS messaging program.",
+    "Terms of Use for WAQTO LLC websites and the WAQTO LLC community SMS messaging program.",
 };
 
 export default function TermsPage() {
@@ -29,7 +29,7 @@ export default function TermsPage() {
             >
               waqto.com
             </a>
-            . WAQTO LLC operates the{" "}
+            . WAQTO LLC operates products including{" "}
             <a
               href="https://duha.app"
               className="text-sky-400 underline-offset-2 hover:underline"
@@ -37,9 +37,27 @@ export default function TermsPage() {
               target="_blank"
             >
               Duha
-            </a>{" "}
-            platform. Product-specific terms for Duha accounts and Organization
-            workspaces may also apply when you use those Services.
+            </a>
+            ,{" "}
+            <a
+              href="https://apps.apple.com/cy/app/sleep-key-tracker-sound/id6756638306"
+              className="text-sky-400 underline-offset-2 hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Sleep Key
+            </a>
+            , and{" "}
+            <a
+              href="https://apps.apple.com/cy/app/hoopsgo/id6760942689"
+              className="text-sky-400 underline-offset-2 hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HoopsGo
+            </a>
+            . Product-specific terms (for example Duha accounts, or in-app terms
+            for consumer apps) may also apply when you use those Services.
           </p>
         </section>
 
@@ -62,10 +80,10 @@ export default function TermsPage() {
           <p>
             Contact:{" "}
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 hover:text-sky-300"
             >
-              hello@waqto.com
+              admin@waqto.com
             </a>
           </p>
         </section>
@@ -86,23 +104,23 @@ export default function TermsPage() {
             SMS and voice messaging program
           </h2>
           <p>
-            WAQTO LLC operates the Duha community SMS (and, where enabled, voice)
-            messaging program. Participating Organizations may use Duha to send
-            text messages to people who have opted in to receive those
-            communications (for example prayer reminders, event announcements,
-            program updates, volunteer and fundraising notices, and urgent
-            schedule or safety notices).
+            WAQTO LLC operates a community SMS (and, where enabled, voice)
+            messaging program. WAQTO LLC sends text messages to people who have
+            opted in to receive communications{" "}
+            <strong className="text-zinc-200">from WAQTO LLC</strong> (for
+            example prayer reminders, event announcements, program updates,
+            volunteer and fundraising notices, and urgent schedule or safety
+            notices).
           </p>
           <p>
             <strong className="text-zinc-200">Opt-in.</strong> Recipients must
             opt in before receiving non-exempt informational SMS—for example by
-            checking an SMS consent checkbox (not pre-checked) on a website or
-            Community App form, by completing a paper form, or by texting an
-            opt-in keyword where an Organization offers keyword enrollment.
-            Consent language includes the program/brand name (WAQTO LLC / Duha),
-            message types, approximate frequency, that message and data rates may
-            apply, and how to opt out. Program details and a sample consent UI
-            are at{" "}
+            checking an SMS consent checkbox (not pre-checked) on a Duha website
+            or Community App form, by completing a paper form, or by texting an
+            opt-in keyword where offered. Consent language states that you agree
+            to receive community texts from WAQTO LLC, describes message types,
+            approximate frequency, that message and data rates may apply, and how
+            to opt out. Program details and a sample consent UI are at{" "}
             <Link
               href="/messaging/"
               className="text-sky-400 underline-offset-2 hover:underline"
@@ -120,21 +138,14 @@ export default function TermsPage() {
           <p>
             <strong className="text-zinc-200">HELP and STOP.</strong> Reply{" "}
             <strong className="text-zinc-200">STOP</strong> to cancel SMS from
-            the WAQTO LLC / Duha messaging program. Reply{" "}
+            WAQTO LLC. Reply{" "}
             <strong className="text-zinc-200">HELP</strong> for assistance.
             Support:{" "}
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 underline-offset-2 hover:underline"
             >
-              hello@waqto.com
-            </a>{" "}
-            or{" "}
-            <a
-              href="mailto:contact@duha.app"
-              className="text-sky-400 underline-offset-2 hover:underline"
-            >
-              contact@duha.app
+              admin@waqto.com
             </a>
             . Message and data rates may apply. See our{" "}
             <Link
@@ -163,10 +174,10 @@ export default function TermsPage() {
           <p>
             Questions about these terms:{" "}
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 hover:text-sky-300"
             >
-              hello@waqto.com
+              admin@waqto.com
             </a>
             .
           </p>

@@ -21,7 +21,7 @@ export default function PrivacyPage() {
           <p>
             This website is operated by{" "}
             <strong className="text-zinc-200">WAQTO LLC</strong>, a Pennsylvania
-            limited liability company. WAQTO LLC builds and operates the{" "}
+            limited liability company. WAQTO LLC builds and operates{" "}
             <a
               href="https://duha.app"
               className="text-sky-400 underline-offset-2 hover:underline"
@@ -30,8 +30,26 @@ export default function PrivacyPage() {
             >
               Duha
             </a>{" "}
-            masjid management platform and is the registered messaging brand for
-            Duha SMS communications.
+            (masjid management),{" "}
+            <a
+              href="https://apps.apple.com/cy/app/sleep-key-tracker-sound/id6756638306"
+              className="text-sky-400 underline-offset-2 hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Sleep Key
+            </a>
+            , and{" "}
+            <a
+              href="https://apps.apple.com/cy/app/hoopsgo/id6760942689"
+              className="text-sky-400 underline-offset-2 hover:underline"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              HoopsGo
+            </a>
+            . WAQTO LLC also operates a community SMS program for people who opt
+            in to receive texts from WAQTO LLC.
           </p>
           <p>
             301 Midland Ave
@@ -45,10 +63,10 @@ export default function PrivacyPage() {
           <p>
             Contact:{" "}
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 hover:text-sky-300"
             >
-              hello@waqto.com
+              admin@waqto.com
             </a>
           </p>
         </section>
@@ -61,9 +79,9 @@ export default function PrivacyPage() {
             If you email us or use our products, we may collect your name, email
             address, phone number, and information about your organization that
             you choose to provide. We use this information to respond to
-            inquiries, operate our software, and provide support. When you or
-            your Organization enroll in SMS messaging, we also process mobile
-            numbers and opt-in / opt-out status as described below.
+            inquiries, operate our software, and provide support. When you enroll
+            in SMS messaging from WAQTO LLC, we also process mobile numbers and
+            opt-in / opt-out status as described below.
           </p>
         </section>
 
@@ -81,32 +99,30 @@ export default function PrivacyPage() {
             SMS and voice messaging
           </h2>
           <p>
-            <strong className="text-zinc-200">WAQTO LLC</strong> operates the
-            Duha Communication Hub messaging program. Organizations may use Duha
-            to send SMS text messages (and, where enabled, automated voice calls)
-            to people who have opted in to receive those communications (for
+            <strong className="text-zinc-200">WAQTO LLC</strong> sends SMS text
+            messages (and, where enabled, automated voice calls) to people who
+            have opted in to receive communications{" "}
+            <strong className="text-zinc-200">from WAQTO LLC</strong> (for
             example prayer reminders, event announcements, program updates,
             volunteer and fundraising notices, and urgent schedule or safety
-            notices). Messages are sent by WAQTO LLC on behalf of the
-            Organization using WAQTO LLC&apos;s messaging infrastructure
-            (including carrier partners such as Twilio).
+            notices). You may opt in on Duha (website or Community App) or other
+            WAQTO consent surfaces. Messages are sent by WAQTO LLC using our
+            messaging infrastructure (including carrier partners such as Twilio).
           </p>
           <p>
             <strong className="text-zinc-200">Message frequency.</strong> Message
-            frequency varies by Organization and program. Recipients typically
+            frequency varies by the programs you join. Recipients typically
             receive a low volume of messages (for example up to four SMS messages
-            per month for routine updates), with higher frequency only when the
-            Organization sends time-sensitive notices. Exact frequency depends on
-            the programs you join and the Organization&apos;s practices.
+            per month for routine updates), with higher frequency only for
+            time-sensitive notices.
           </p>
           <p>
             <strong className="text-zinc-200">
               Message and data rates may apply.
             </strong>{" "}
             Standard message and data rates from your wireless carrier may apply
-            to SMS and voice communications. WAQTO LLC and the Organization do
-            not charge you a separate fee for receiving these messages, but your
-            carrier may.
+            to SMS and voice communications. WAQTO LLC does not charge you a
+            separate fee for receiving these messages, but your carrier may.
           </p>
           <p>
             <strong className="text-zinc-200">
@@ -116,30 +132,23 @@ export default function PrivacyPage() {
             <strong className="text-zinc-200">not</strong> sell, rent, or share
             mobile phone numbers or SMS/voice opt-in data with third parties or
             affiliates for their own marketing or promotional purposes. Mobile
-            numbers are used only to deliver messages you (or your Organization,
-            with your consent) requested, to operate and secure our services, to
-            honor opt-out requests, and as otherwise described in this Privacy
-            Policy (including sharing with messaging carriers and subprocessors
-            solely to transmit those messages).
+            numbers are used only to deliver messages you consented to receive
+            from WAQTO LLC, to operate and secure our services, to honor opt-out
+            requests, and as otherwise described in this Privacy Policy
+            (including sharing with messaging carriers and subprocessors solely
+            to transmit those messages).
           </p>
           <p>
             <strong className="text-zinc-200">Opt out and help.</strong> You may
-            opt out of WAQTO LLC / Duha Organization SMS at any time by replying{" "}
+            opt out of WAQTO LLC SMS at any time by replying{" "}
             <strong className="text-zinc-200">STOP</strong> to a message. Reply{" "}
             <strong className="text-zinc-200">HELP</strong> for assistance. You
             may also contact WAQTO LLC at{" "}
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 underline-offset-2 hover:underline"
             >
-              hello@waqto.com
-            </a>{" "}
-            or Duha support at{" "}
-            <a
-              href="mailto:contact@duha.app"
-              className="text-sky-400 underline-offset-2 hover:underline"
-            >
-              contact@duha.app
+              admin@waqto.com
             </a>
             . Program overview:{" "}
             <Link
@@ -164,10 +173,10 @@ export default function PrivacyPage() {
           <p>
             Questions about this policy can be sent to{" "}
             <a
-              href="mailto:hello@waqto.com"
+              href="mailto:admin@waqto.com"
               className="text-sky-400 hover:text-sky-300"
             >
-              hello@waqto.com
+              admin@waqto.com
             </a>
             .
           </p>
