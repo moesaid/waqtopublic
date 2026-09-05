@@ -31,18 +31,18 @@ WAQTO LLC operates a low-volume community SMS program for people who opt in to r
 
 ## Message flow (Call to Action / opt-in)
 
-**Primary opt-in evidence URL to reference:** `https://waqto.com/opt-in/`
+**Primary opt-in evidence URL:** `https://waqto.com/opt-in/`
 
 Paste into **How do end-users consent to receive messages?**:
 
 ```
-End users opt in to receive SMS from WAQTO LLC. Public opt-in evidence with web and paper samples: https://waqto.com/opt-in/
+End users opt in to SMS from WAQTO LLC at https://waqto.com/opt-in/ (also used on Duha web/app). Informational and promotional/marketing consent are captured with TWO separate, optional checkboxes that are NOT pre-selected. Completing signup does not require either SMS box.
 
-Web/app form: On Duha (https://duha.app) or the public form at https://waqto.com/opt-in/#web-form, the user enters Mobile Phone Number, checks an SMS consent checkbox that is NOT pre-selected, and submits (e.g. "Yes, sign me up!"). Consent language: Yes, I would like to receive automated community text messages from WAQTO LLC about prayer reminders, events, program updates, volunteer opportunities, fundraising for community programs, and urgent schedule/safety notices. I understand I will receive up to 4 messages per month (more only for time-sensitive notices). Disclosures on the form: Message frequency (up to 4/month); Message and data rates may apply; Reply HELP for help or STOP to cancel any time; By providing your phone number and checking the box you agree to receive texts from WAQTO LLC; Consent is not required to use Duha or complete community signup; links to Terms https://waqto.com/terms/ and Privacy https://waqto.com/privacy/.
+Web/app (https://waqto.com/opt-in/#web-form): User enters Mobile Phone Number. Checkbox 1 (informational, optional): "Yes, I would like to receive automated informational text messages from WAQTO LLC about prayer and Jumu'ah reminders, event and program announcements, schedule changes, and urgent schedule/safety notices. I understand I will receive up to 4 informational messages per month (more only for time-sensitive notices)." Checkbox 2 (promotional/marketing, optional, separate): "Yes, I would like to receive separate promotional text messages from WAQTO LLC about fundraising for community programs, volunteer recruitment offers, and other promotional community updates. I understand promotional message frequency varies (typically up to 4 messages per month). This is optional and independent of informational alerts." Form also shows: Message and data rates may apply; Reply HELP for help or STOP to cancel; Consent is not required to use Duha or complete signup; Terms https://waqto.com/terms/ Privacy https://waqto.com/privacy/; submit "Yes, sign me up!".
 
-Paper/printed form: Community registration paper forms (sample: https://waqto.com/opt-in/#paper-form) have Name/Email/Phone signup fields that do NOT enroll SMS. A SEPARATE optional checkbox that is NOT pre-checked states: "Optional — text messages from WAQTO LLC: I agree to receive automated community text messages from WAQTO LLC (prayer reminders, events, program updates, volunteer opportunities, fundraising for community programs, and urgent schedule/safety notices). Message frequency: up to 4 messages per month (more only for time-sensitive notices). Message and data rates may apply. Reply HELP for help or STOP to cancel any time. Terms of Service and Privacy Policy at waqto.com. Leaving this box unchecked still allows me to complete this form. Consent to SMS is not required to register." Signing the form alone does not enroll in SMS.
+Paper (https://waqto.com/opt-in/#paper-form): Name/Email/Phone signup fields do NOT enroll SMS. Two SEPARATE optional unchecked boxes—one informational, one promotional/marketing—with the same disclosures. Leaving both unchecked still allows completing the form.
 
-Keyword (where offered): confirmation reply includes brand, frequency, Msg & data rates, HELP, STOP.
+Keyword (where offered): confirmation lists category, frequency, Msg & data rates, HELP, STOP.
 ```
 
 ---

@@ -4,11 +4,8 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "SMS Opt-In — WAQTO LLC",
   description:
-    "Public SMS opt-in evidence for WAQTO LLC community text alerts: web form and paper form samples with required disclosures.",
+    "Public SMS opt-in evidence for WAQTO LLC: separate informational and optional marketing consent checkboxes with required disclosures.",
 };
-
-const consentBody =
-  "Yes, I would like to receive automated community text messages from WAQTO LLC about prayer reminders, events, program updates, volunteer opportunities, fundraising for community programs, and urgent schedule/safety notices. I understand I will receive up to 4 messages per month (more only for time-sensitive notices).";
 
 export default function OptInPage() {
   return (
@@ -21,9 +18,12 @@ export default function OptInPage() {
       </h1>
       <p className="mt-3 text-sm leading-relaxed text-zinc-400">
         This public page shows how people consent to receive SMS from{" "}
-        <strong className="font-medium text-zinc-200">WAQTO LLC</strong>. The
-        same disclosures appear on Duha web/app forms and on printed community
-        registration forms. Program overview:{" "}
+        <strong className="font-medium text-zinc-200">WAQTO LLC</strong>.
+        Informational and promotional/marketing texts use{" "}
+        <strong className="font-medium text-zinc-200">
+          separate, optional checkboxes
+        </strong>{" "}
+        (neither is pre-selected). Program overview:{" "}
         <Link
           href="/messaging/"
           className="text-sky-400 underline-offset-2 hover:underline"
@@ -33,7 +33,6 @@ export default function OptInPage() {
         .
       </p>
 
-      {/* Web form — mirrors Twilio/Acme example structure */}
       <section
         id="web-form"
         className="mt-10 rounded-2xl border border-white/15 bg-white/[0.04] p-6"
@@ -42,7 +41,7 @@ export default function OptInPage() {
           WAQTO LLC text alert subscription form
         </h2>
         <p className="mt-1 text-xs text-zinc-500">
-          Web / mobile form example (checkbox is not pre-selected)
+          Web / mobile form — two separate consent boxes (not pre-selected)
         </p>
 
         <label className="mt-6 block text-sm font-medium text-zinc-200">
@@ -67,7 +66,36 @@ export default function OptInPage() {
             aria-hidden
           />
           <span className="text-sm leading-relaxed text-zinc-200">
-            {consentBody}
+            <strong className="text-zinc-100">
+              Informational community alerts (optional):
+            </strong>{" "}
+            Yes, I would like to receive automated informational text messages
+            from WAQTO LLC about prayer and Jumu&apos;ah reminders, event and
+            program announcements, schedule changes, and urgent schedule/safety
+            notices. I understand I will receive up to 4 informational messages
+            per month (more only for time-sensitive notices).
+          </span>
+        </label>
+
+        <label className="mt-4 flex cursor-default items-start gap-3">
+          <input
+            type="checkbox"
+            defaultChecked={false}
+            disabled
+            tabIndex={-1}
+            className="mt-1 h-4 w-4 shrink-0 rounded border-white/30 bg-[#070b12]"
+            aria-hidden
+          />
+          <span className="text-sm leading-relaxed text-zinc-200">
+            <strong className="text-zinc-100">
+              Promotional / marketing texts (optional):
+            </strong>{" "}
+            Yes, I would like to receive separate promotional text messages from
+            WAQTO LLC about fundraising for community programs, volunteer
+            recruitment offers, and other promotional community updates. I
+            understand promotional message frequency varies (typically up to 4
+            messages per month). This is optional and independent of
+            informational alerts.
           </span>
         </label>
 
@@ -76,8 +104,9 @@ export default function OptInPage() {
             <strong className="font-medium text-zinc-300">
               Message frequency:
             </strong>{" "}
-            You will receive up to 4 messages per month (more only for
-            time-sensitive notices).
+            Up to 4 informational messages per month if you opt in above; up to
+            4 promotional messages per month if you separately opt in to
+            marketing. More only for time-sensitive informational notices.
           </p>
           <p>
             Message and data rates may apply depending on your mobile phone
@@ -85,9 +114,9 @@ export default function OptInPage() {
           </p>
           <p>
             Reply HELP for help or STOP to cancel any time. By providing your
-            phone number and checking the box above, you agree to receive text
-            messages from WAQTO LLC. Consent is not required to use Duha or
-            complete community signup.
+            phone number and checking a box above, you agree to receive those
+            text messages from WAQTO LLC for that category only. Consent is not
+            required to use Duha or complete community signup.
           </p>
           <p>
             <Link
@@ -114,7 +143,6 @@ export default function OptInPage() {
         </div>
       </section>
 
-      {/* Paper form */}
       <section
         id="paper-form"
         className="mt-8 rounded-2xl border border-white/15 bg-white/[0.04] p-6"
@@ -123,7 +151,7 @@ export default function OptInPage() {
           Paper / printed registration form (example)
         </h2>
         <p className="mt-1 text-xs text-zinc-500">
-          SMS is a separate optional checkbox — not required to finish signup
+          Two optional SMS checkboxes — neither required to finish signup
         </p>
 
         <div className="mt-5 space-y-2 font-mono text-sm text-zinc-400">
@@ -148,29 +176,47 @@ export default function OptInPage() {
           />
           <span className="text-sm leading-relaxed text-zinc-200">
             <strong className="text-zinc-100">
-              Optional — text messages from WAQTO LLC:
+              Optional — informational texts from WAQTO LLC:
             </strong>{" "}
-            I agree to receive automated community text messages from WAQTO LLC
-            (prayer reminders, events, program updates, volunteer opportunities,
-            fundraising for community programs, and urgent schedule/safety
-            notices). Message frequency: up to 4 messages per month (more only
-            for time-sensitive notices). Message and data rates may apply. Reply
-            HELP for help or STOP to cancel any time.{" "}
+            I agree to receive automated informational text messages from WAQTO
+            LLC (prayer reminders, events, program updates, schedule changes,
+            urgent schedule/safety notices). Up to 4 msgs/month. Message and
+            data rates may apply. Reply HELP for help or STOP to cancel.{" "}
             <Link
               href="/terms/#sms"
               className="text-sky-400 underline underline-offset-2"
             >
-              Terms of Service
+              Terms
             </Link>
             {" · "}
             <Link
               href="/privacy/#sms"
               className="text-sky-400 underline underline-offset-2"
             >
-              Privacy Policy
+              Privacy
             </Link>
-            . Leaving this box unchecked still allows me to complete this form.
-            Consent to SMS is not required to register.
+            . Not required to register.
+          </span>
+        </label>
+
+        <label className="mt-4 flex cursor-default items-start gap-3">
+          <input
+            type="checkbox"
+            defaultChecked={false}
+            disabled
+            tabIndex={-1}
+            className="mt-1 h-4 w-4 shrink-0 rounded border-white/30 bg-[#070b12]"
+            aria-hidden
+          />
+          <span className="text-sm leading-relaxed text-zinc-200">
+            <strong className="text-zinc-100">
+              Optional — promotional / marketing texts from WAQTO LLC:
+            </strong>{" "}
+            I agree to receive separate promotional text messages from WAQTO LLC
+            (fundraising for community programs, volunteer recruitment offers,
+            promotional community updates). Up to 4 msgs/month. Message and data
+            rates may apply. Reply HELP for help or STOP to cancel. Independent
+            of informational alerts. Not required to register.
           </span>
         </label>
       </section>
