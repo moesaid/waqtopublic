@@ -102,19 +102,29 @@ export default function PrivacyPage() {
             <strong className="text-zinc-200">WAQTO LLC</strong> sends SMS text
             messages (and, where enabled, automated voice calls) to people who
             have opted in to receive communications{" "}
-            <strong className="text-zinc-200">from WAQTO LLC</strong> (for
-            example prayer reminders, event announcements, program updates,
-            volunteer and fundraising notices, and urgent schedule or safety
-            notices). You may opt in on Duha (website or Community App) or other
-            WAQTO consent surfaces. Messages are sent by WAQTO LLC using our
-            messaging infrastructure (including carrier partners such as Twilio).
+            <strong className="text-zinc-200">from WAQTO LLC</strong>. Consent
+            uses two separate, optional checkboxes that are not pre-selected:
+            (1) informational alerts (prayer reminders, event and program
+            announcements, schedule changes, urgent schedule/safety notices), and
+            (2) promotional/marketing texts (fundraising for community programs,
+            volunteer recruitment offers, and other promotional updates). You may
+            agree to each independently on Duha (website or Community App) or
+            other WAQTO consent surfaces (see{" "}
+            <Link
+              href="/opt-in/"
+              className="text-sky-400 underline-offset-2 hover:underline"
+            >
+              waqto.com/opt-in
+            </Link>
+            ). Messages are sent by WAQTO LLC using our messaging infrastructure
+            (including carrier partners such as Twilio).
           </p>
           <p>
-            <strong className="text-zinc-200">Message frequency.</strong> Message
-            frequency varies by the programs you join. Recipients typically
-            receive a low volume of messages (for example up to four SMS messages
-            per month for routine updates), with higher frequency only for
-            time-sensitive notices.
+            <strong className="text-zinc-200">Message frequency.</strong> Up to
+            four informational messages per month if you opt in to informational
+            alerts; up to four promotional messages per month if you separately
+            opt in to marketing. Higher frequency only for time-sensitive
+            informational notices.
           </p>
           <p>
             <strong className="text-zinc-200">

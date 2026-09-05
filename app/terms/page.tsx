@@ -107,20 +107,29 @@ export default function TermsPage() {
             WAQTO LLC operates a community SMS (and, where enabled, voice)
             messaging program. WAQTO LLC sends text messages to people who have
             opted in to receive communications{" "}
-            <strong className="text-zinc-200">from WAQTO LLC</strong> (for
-            example prayer reminders, event announcements, program updates,
-            volunteer and fundraising notices, and urgent schedule or safety
-            notices).
+            <strong className="text-zinc-200">from WAQTO LLC</strong>. Opt-in
+            captures informational and promotional/marketing consent separately
+            with two optional checkboxes that are not pre-selected.
           </p>
           <p>
             <strong className="text-zinc-200">Opt-in.</strong> Recipients must
-            opt in before receiving non-exempt informational SMS—for example by
-            checking an SMS consent checkbox (not pre-checked) on a Duha website
-            or Community App form, by completing a paper form, or by texting an
-            opt-in keyword where offered. Consent language states that you agree
-            to receive community texts from WAQTO LLC, describes message types,
-            approximate frequency, that message and data rates may apply, and how
-            to opt out. Program details and a sample consent UI are at{" "}
+            opt in before receiving non-exempt SMS—for example by checking the
+            relevant optional SMS consent checkbox(es) (not pre-checked) on a
+            Duha website or Community App form, on a paper form, or by texting an
+            opt-in keyword where offered. Informational consent covers prayer
+            reminders, events, program updates, schedule changes, and urgent
+            schedule/safety notices. Promotional/marketing consent is a separate
+            optional checkbox for fundraising, volunteer recruitment offers, and
+            other promotional updates. Consent language describes message types
+            for that category, approximate frequency, that message and data rates
+            may apply, and how to opt out. Evidence:{" "}
+            <Link
+              href="/opt-in/"
+              className="text-sky-400 underline-offset-2 hover:underline"
+            >
+              waqto.com/opt-in
+            </Link>
+            . Program details:{" "}
             <Link
               href="/messaging/"
               className="text-sky-400 underline-offset-2 hover:underline"
@@ -130,10 +139,10 @@ export default function TermsPage() {
             .
           </p>
           <p>
-            <strong className="text-zinc-200">Frequency.</strong> Message
-            frequency varies. Recipients typically receive a low volume of
-            messages (for example up to four SMS messages per month for routine
-            updates), with higher frequency only for time-sensitive notices.
+            <strong className="text-zinc-200">Frequency.</strong> Up to four
+            informational messages per month and/or up to four promotional
+            messages per month depending on which optional boxes you checked.
+            Higher frequency only for time-sensitive informational notices.
           </p>
           <p>
             <strong className="text-zinc-200">HELP and STOP.</strong> Reply{" "}

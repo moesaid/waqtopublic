@@ -24,7 +24,7 @@ Paste these fields into Twilio Console when creating a new USA2P / LOW_VOLUME ca
 ## Campaign description
 
 ```
-WAQTO LLC operates a low-volume community SMS program for people who opt in to receive text messages from WAQTO LLC. Recipients are community members who consented via Duha (our product at https://duha.app) web or app forms, paper forms, or keyword where offered. Messages include prayer and Jumu'ah reminders, event and program announcements, schedule changes, volunteer opportunities, fundraising updates for community programs, and urgent schedule or safety notices. Typical volume is up to 4 messages per month, with higher frequency only for time-sensitive notices. Recipients may reply STOP to opt out and HELP for help. Message and data rates may apply. Program details: https://waqto.com/messaging/
+WAQTO LLC operates a low-volume community SMS program for people who opt in to receive text messages from WAQTO LLC. Recipients consent via Duha (https://duha.app) or https://waqto.com/opt-in/ using TWO separate optional checkboxes (not pre-selected): (1) informational alerts—prayer and Jumu'ah reminders, event and program announcements, schedule changes, urgent schedule/safety notices; (2) promotional/marketing—fundraising for community programs, volunteer recruitment offers, other promotional updates. Consumers may agree to each independently. Typical volume is up to 4 informational and/or up to 4 promotional messages per month depending on opt-in. Recipients may reply STOP to opt out and HELP for help. Message and data rates may apply. Program details: https://waqto.com/messaging/
 ```
 
 ---
@@ -105,7 +105,7 @@ You have been unsubscribed from WAQTO LLC messages. You will not receive any mor
 ## Pre-submit checklist
 
 - [ ] https://waqto.com loads and shows WAQTO LLC identity (address, EIN, admin@waqto.com)
-- [ ] https://waqto.com/messaging/ shows first-party opt-in sample (unchecked checkbox), STOP/HELP, privacy/terms links
-- [ ] Privacy `#sms` states mobile numbers are not shared for third-party marketing
+- [ ] https://waqto.com/opt-in/ and https://waqto.com/messaging/ show TWO separate unchecked SMS checkboxes (informational vs promotional/marketing)
+- [ ] Privacy `#sms` and Terms `#sms` describe separate consents (no single bundled fundraising+alerts statement)
 - [ ] Campaign description and message_flow match the live site (sender = WAQTO LLC, not “on behalf of”)
 - [ ] Samples include brand name + STOP; no disaster-only emergency framing
