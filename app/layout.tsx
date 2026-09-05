@@ -40,7 +40,8 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      style={{ colorScheme: "dark" }}
     >
       <body className="flex min-h-full flex-col bg-[#070b12] text-zinc-100">
         <div className="relative flex min-h-full flex-1 flex-col overflow-hidden">
