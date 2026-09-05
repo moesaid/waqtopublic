@@ -31,8 +31,18 @@ WAQTO LLC operates a low-volume community SMS program for people who opt in to r
 
 ## Message flow (Call to Action / opt-in)
 
+Paste this into **How do end-users consent to receive messages?** (addresses paper-form explicit consent + optional SMS):
+
 ```
-End users opt in before receiving SMS from WAQTO LLC. On Duha (https://duha.app) website or Community App forms, or on other WAQTO consent surfaces, the user enters their mobile number and checks an SMS consent checkbox that is not pre-checked. Consent language states they agree to receive community text messages from WAQTO LLC (prayer reminders, events, program updates, volunteer and fundraising notices, and urgent schedule/safety notices), that frequency varies (typically up to 4 msgs/month; more only for time-sensitive notices), that message and data rates may apply, and that they may reply STOP to opt out or HELP for help. Program details and a sample consent UI are at https://waqto.com/messaging/. Privacy Policy: https://waqto.com/privacy/. Terms: https://waqto.com/terms/. Additional opt-in may occur via paper forms or keyword where offered; all paths use the same disclosures and identify WAQTO LLC as the sender.
+End users opt in before receiving SMS from WAQTO LLC. SMS consent is always optional and separate from membership or community signup—completing a form does not require agreeing to texts.
+
+Web/app: On Duha (https://duha.app) website or Community App forms, the user may enter a mobile number and check a separate SMS consent checkbox that is not pre-checked.
+
+Paper/printed forms: Registration or community paper forms include standard signup fields (name, email, phone). SMS enrollment uses a separate, optional checkbox that is not pre-checked and is not required to complete the form. The printed checkbox wording states: "Optional — I agree to receive community text messages from WAQTO LLC (prayer reminders, events, program updates, volunteer and fundraising notices, and urgent schedule/safety notices). Message frequency varies (typically up to 4 msgs/month). Msg & data rates may apply. Reply STOP to opt out or HELP for help. Privacy: https://waqto.com/privacy/ Terms: https://waqto.com/terms/ Leaving this box unchecked still allows me to complete this form." Signing the form alone does not enroll the person in SMS.
+
+Keyword (where offered): User texts an opt-in keyword and receives a confirmation reply with brand name, frequency, Msg & data rates may apply, HELP, and STOP.
+
+All paths identify WAQTO LLC as the sender. Program details and sample web + paper consent UIs: https://waqto.com/messaging/ Privacy: https://waqto.com/privacy/ Terms: https://waqto.com/terms/
 ```
 
 ---

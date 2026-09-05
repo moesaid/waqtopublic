@@ -81,32 +81,48 @@ export default function MessagingPage() {
             How to opt in
           </h2>
           <p>
-            You opt in by providing your mobile number and checking an SMS
-            consent checkbox that is{" "}
-            <strong className="font-medium text-zinc-200">not pre-checked</strong>
-            {" "}
-            on Duha (website or Community App) forms, or by paper form or
-            keyword where offered. Consent is to receive community texts{" "}
-            <strong className="font-medium text-zinc-200">
-              from WAQTO LLC
-            </strong>
-            . All paths use the same disclosures.
+            SMS is always optional. Completing a community or membership signup
+            does <strong className="font-medium text-zinc-200">not</strong>{" "}
+            require agreeing to texts. A separate SMS consent checkbox that is{" "}
+            <strong className="font-medium text-zinc-200">not pre-checked</strong>{" "}
+            must be checked to receive community texts{" "}
+            <strong className="font-medium text-zinc-200">from WAQTO LLC</strong>.
           </p>
           <p>
-            A sample of the consent language and checkbox appears below (for
-            review; this page is not a live signup form).
+            <strong className="font-medium text-zinc-200">Web / app:</strong> On
+            Duha (https://duha.app) website or Community App forms, the user may
+            enter a mobile number and optionally check the SMS consent box.
+          </p>
+          <p>
+            <strong className="font-medium text-zinc-200">Paper / printed:</strong>{" "}
+            Paper forms (for example community registration) include name and
+            contact fields for signup, plus a{" "}
+            <strong className="font-medium text-zinc-200">
+              separate, optional, unchecked
+            </strong>{" "}
+            SMS consent checkbox with explicit language that the person agrees to
+            receive text messages from WAQTO LLC, the message types, that message
+            frequency varies (typically up to 4 msgs/month), that Msg &amp; data
+            rates may apply, and that they can reply STOP to opt out or HELP for
+            help. Signing the form alone does not enroll someone in SMS.
+          </p>
+          <p>
+            <strong className="font-medium text-zinc-200">Keyword:</strong> Where
+            offered, texting an opt-in keyword receives a confirmation reply with
+            the same disclosures. Samples below are illustrative (not a live
+            signup).
           </p>
         </section>
 
         <section
-          aria-label="Sample SMS consent form"
+          aria-label="Sample web SMS consent"
           className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6"
         >
           <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500">
-            Sample opt-in (illustrative)
+            Sample web / app SMS opt-in (illustrative)
           </p>
           <label className="mt-4 block text-xs text-zinc-500">
-            Mobile number
+            Mobile number (optional unless opting into SMS)
             <input
               type="tel"
               readOnly
@@ -131,8 +147,8 @@ export default function MessagingPage() {
               (prayer reminders, events, program updates, volunteer and
               fundraising notices, and urgent schedule/safety notices). Message
               frequency varies (typically up to 4 msgs/month; more only for
-              time-sensitive notices). Message and data rates may apply. Reply
-              STOP to opt out or HELP for help. See our{" "}
+              time-sensitive notices). Msg &amp; data rates may apply. Reply STOP
+              to opt out or HELP for help. See our{" "}
               <Link
                 href="/privacy/#sms"
                 className="text-sky-400 underline-offset-2 hover:underline"
@@ -146,7 +162,58 @@ export default function MessagingPage() {
               >
                 Terms of Use
               </Link>
-              .
+              . This box is optional and is not required to complete signup.
+            </span>
+          </label>
+        </section>
+
+        <section
+          aria-label="Sample paper SMS consent"
+          className="rounded-2xl border border-white/10 bg-white/[0.03] p-5 sm:p-6"
+        >
+          <p className="font-mono text-[10px] uppercase tracking-[0.2em] text-zinc-500">
+            Sample paper / printed form (illustrative)
+          </p>
+          <div className="mt-4 space-y-2 text-sm text-zinc-400">
+            <p>Name: _______________________________</p>
+            <p>Email: _______________________________</p>
+            <p>Phone (optional): ____________________</p>
+          </div>
+          <p className="mt-4 text-xs text-zinc-500">
+            Membership / community signup above does not enroll you in SMS.
+          </p>
+          <label className="mt-4 flex cursor-default items-start gap-3">
+            <input
+              type="checkbox"
+              defaultChecked={false}
+              disabled
+              tabIndex={-1}
+              className="mt-1 h-4 w-4 shrink-0 rounded border-white/20 bg-[#070b12]"
+              aria-hidden
+            />
+            <span className="text-sm leading-relaxed text-zinc-300">
+              <strong className="font-medium text-zinc-100">
+                Optional — SMS from WAQTO LLC:
+              </strong>{" "}
+              I agree to receive community text messages from WAQTO LLC (prayer
+              reminders, events, program updates, volunteer and fundraising
+              notices, and urgent schedule/safety notices). Message frequency
+              varies (typically up to 4 msgs/month). Msg &amp; data rates may
+              apply. Reply STOP to opt out or HELP for help. Privacy:{" "}
+              <Link
+                href="/privacy/#sms"
+                className="text-sky-400 underline-offset-2 hover:underline"
+              >
+                waqto.com/privacy
+              </Link>
+              . Terms:{" "}
+              <Link
+                href="/terms/#sms"
+                className="text-sky-400 underline-offset-2 hover:underline"
+              >
+                waqto.com/terms
+              </Link>
+              . Leaving this box unchecked still allows me to complete this form.
             </span>
           </label>
         </section>
